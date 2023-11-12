@@ -1,0 +1,13 @@
+project/www/vendor/*
+project/www/var/*
+project/front/dist/*
+project/front/node_modules/*
+_MV/
+**/.phpunit.cache/**
+**/vendor/**
+**/node_modules/**
+**/dist/**
+**/var/**
+**/.svn/**
+**/.idea/**
+**/node_modules*

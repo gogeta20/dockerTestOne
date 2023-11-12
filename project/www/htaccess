@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+    <!-- RewriteEngine On
+
+
+    RewriteCond %{REQUEST_URI} ^/api/ [OR]
+    RewriteCond %{REQUEST_URI} ^/_profiler [OR]
+    RewriteCond %{REQUEST_URI} ^/_error/ [OR]
+    RewriteCond %{REQUEST_URI} ^/xorfor/Autenticacion/loginIntranetCAS [OR]
+    RewriteCond %{REQUEST_URI} ^/xorfor/Autenticacion/loginExtranetCAS [OR]
+    RewriteCond %{REQUEST_URI} ^/xorfor/login/cas [OR]
+    RewriteCond %{REQUEST_URI} ^/xorfor/WebService/* [OR]
+    RewriteCond %{REQUEST_URI} ^/free/
+    RewriteRule    (.*) public/$1 [L]
+
+	RewriteCond %{REQUEST_URI} !^/api/
+	RewriteRule    ^$ /xorfor/index.html    [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /xorfor/index.html [L] -->
+
+
+    <!-- RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /public/index.php?path=$1 [NC,L,QSA] -->
+</IfModule>
+
+<!-- <Files .htaccess>
+order allow,deny
+deny from all
+</Files> -->
