@@ -23,6 +23,13 @@ services:
       - "80:80"
     volumes:
       - ../project/www:/var/www/html
+      - ../project/shared:/var/www/shared
+      - ../project/conf/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      # - ../project/shared/original/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ../project/conf/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+      # - ../project/shared/original/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+      # - ../project/conf/hosts:/etc/hosts
+      - ../project/conf/ports.conf:/etc/apache2/ports.conf
     links:
       - db
     networks:

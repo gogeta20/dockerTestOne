@@ -1,4 +1,4 @@
-FROM php:8.2.12-apache
+FROM php:8.2.12-apache as mphp
 # FROM php:8.0.0-apache
 ARG DEBIAN_FRONTEND=noninteractive
 RUN docker-php-ext-install mysqli
